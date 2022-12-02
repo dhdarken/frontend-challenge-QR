@@ -13,14 +13,14 @@ body {
 
 .container {
   width: 350px;
-  height: 500px;
+  aspect-ratio: 1 / 1;
   background-color: hsl(0, 0%, 100%);
   border-radius: 30px;
 }
 
 img {
-  padding-top: 8px;
-  width: 330px;
+  padding: 8px;
+  width: 100%;
   height: 340px;
   border-radius: 30px;
   margin: auto;
@@ -48,4 +48,10 @@ p {
   margin: 0;
   color: hsl(220, 15%, 55%);
   font-weight: 400;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 300px;
+  }
 }
